@@ -292,7 +292,7 @@ async function startRealtime() {
   const instructions = (uiLang === "eu") ? SAFE_PROMPT_EU : SAFE_PROMPT_ES;
 
   // Sesión
-  const sessResp = await fetch("/session", {
+  const sessResp = await fetch("/api/session", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ voice, instructions })
