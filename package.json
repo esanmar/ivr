@@ -1,0 +1,16 @@
+{
+  "name": "ivr-realtime-vercel",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo \"no build\"",
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "soap": "^1.0.0",
+    "@google-cloud/text-to-speech": "^5.7.0"
+  }
+}
