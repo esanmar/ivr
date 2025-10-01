@@ -1,5 +1,6 @@
 const soap = require("soap");
-const WSDL_URL = "http://devinet.dfa.es/WHASCCertificados/WHASCCertificados.svc?wsdl";
+//const WSDL_URL = "http://devinet.dfa.es/WHASCCertificados/WHASCCertificados.svc?wsdl";
+const WSDL_URL = "http://www.dfa.es/WHASCCertificados/WHASCCertificados.svc?wsdl";
 
 async function getPdfBase64({ nif, comprobar = true, usuario = "Internet" }) {
   const client = await soap.createClientAsync(WSDL_URL);
